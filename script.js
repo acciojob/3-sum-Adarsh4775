@@ -27,6 +27,7 @@ function threeSum(arr, target) {
             }
    }
   }
+	return closestSum;
 }
-return closestSum();
+
 module.exports = threeSum;
