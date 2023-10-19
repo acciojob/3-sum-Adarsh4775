@@ -1,6 +1,7 @@
 function threeSum(arr, target) {
   //your code here
 	arr.sort((a,b) => a - b);
+	let closestSum = arr[0] + arr[1] + arr[2];
 	for(i=0; i<arr.length-2; i++)
 		{
 	let point1 = i+1;
@@ -18,9 +19,12 @@ function threeSum(arr, target) {
 	}
 	else
 	{
-		 sum == target;
+		 
 		return sum;
 	}
+		if (Math.abs(sum - target) < Math.abs(closestSum - target)) { 
+                closestSum = sum;
+            }
    }
   }
 }
