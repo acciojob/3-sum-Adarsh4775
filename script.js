@@ -12,5 +12,5 @@ function threeSum(arr, target) {
 	}
 
 }
-
+threeSum();
 module.exports = threeSum;
